@@ -256,9 +256,9 @@ dependencies = [
 
 [[package]]
 name = "autocfg"
-version = "1.0.0"
+version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f8aac770f1885fd7e387acedd76065302551364496e46b3dd00860b2f8359b9d"
+checksum = "d468802bab17cbc0cc575e9b053f41e72aa36bfa6b7f55e3529ffa43161b97fa"
 
 [[package]]
 name = "autotools"
@@ -611,11 +611,10 @@ dependencies = [
 
 [[package]]
 name = "caps"
-version = "0.5.3"
+version = "0.5.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "61bf7211aad104ce2769ec05efcdfabf85ee84ac92461d142f22cf8badd0e54c"
+checksum = "938c50180feacea622ef3b8f4a496057c868dcf8ac7a64d781dd8f3f51a9c143"
 dependencies = [
- "errno",
  "libc",
  "thiserror",
 ]
@@ -2535,6 +2534,20 @@ dependencies = [
  "cfg-if 1.0.0",
  "libc",
  "memoffset",
+]
+
+[[package]]
+name = "nix"
+version = "0.25.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e322c04a9e3440c327fca7b6c8a63e6890a32fa2ad689db972425f07e0d22abb"
+dependencies = [
+ "autocfg",
+ "bitflags",
+ "cfg-if 1.0.0",
+ "libc",
+ "memoffset",
+ "pin-utils",
 ]
 
 [[package]]
@@ -5113,7 +5126,7 @@ dependencies = [
  "clap 3.1.6",
  "crossbeam-channel",
  "log",
- "nix",
+ "nix 0.24.2",
  "rand 0.7.3",
  "serde",
  "serde_derive",
@@ -5140,7 +5153,7 @@ dependencies = [
  "lazy_static",
  "libc",
  "log",
- "nix",
+ "nix 0.25.0",
  "rand 0.7.3",
  "rayon",
  "serde",
@@ -5660,7 +5673,7 @@ dependencies = [
  "itertools",
  "libc",
  "log",
- "nix",
+ "nix 0.24.2",
  "pem",
  "percentage",
  "pkcs8",
@@ -5684,7 +5697,7 @@ dependencies = [
  "clap 2.33.3",
  "libc",
  "log",
- "nix",
+ "nix 0.24.2",
  "solana-logger 1.12.0",
  "solana-version",
  "sysctl",
